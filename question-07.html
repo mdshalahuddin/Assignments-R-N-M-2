@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment question - 07</title>
+    <style>
+      /* Styles for the button */
+.button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button:active,
+.button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:hover{
+  color: #041d09;
+}
+    </style>
+  </head>
+  <body>
+    <button class="button"><a href="./index.html">Back To Home</a></button>
+    <img
+    src=https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?w=2000
+    width="350" height="250" onmouseover="changeImageSrc()"/>
+    <script>
+      // Question - 7 (a)
+      document.addEventListener("click", function (event) {
+        alert(`Coordinates:\nX = ${event.clientX}\nY = ${event.clientY}`);
+      });
+      // Question - 7 (b)
+      document.addEventListener("keypress", function (event) {
+        alert(`Key Name: = ${event.key}\nKey Code = ${event.which}`);
+      });
+      // Question - 7 (c)
+      function changeImageSrc() {
+        let imgElement = document.querySelector("img");
+        imgElement.src =
+          "https://cdn2.stylecraze.com/wp-content/uploads/2013/07/25-Most-Beautiful-Blue-Flowers.jpg";
+      }
+    </script>
+  </body>
+</html>
